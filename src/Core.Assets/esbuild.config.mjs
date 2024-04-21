@@ -1,4 +1,4 @@
-import * as esbuild from 'esbuild'
+﻿import * as esbuild from 'esbuild'
 import pkg from './package.json' assert { type: 'json' }
 
 await esbuild.build({
@@ -7,7 +7,7 @@ await esbuild.build({
     minify: true,
     sourcemap: true,
     logLevel: 'info',
-    target: 'es2022',
+    target: 'es6',
     format: 'esm',
     outfile: pkg.main,
     legalComments: 'external',
